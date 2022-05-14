@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@mixin flex-center-hv { display: flex; justify-content: center; align-items: center; }
+body{
+	overflow-x:hidden;
+	background: url(https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/feature-content/bg-wool-light.png);
+	font-family: 'Bitter', serif;
+}
+.empty{
+	weight: 100%;
+	height: 150px;
+}
+.empty2{
+	height: 100px;
+    display: block;
+    background-position-x: -815px;
+    background-repeat: repeat-x!important;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+/*Описание сервера*/
+.container-about h1{
+	font-size: 40px;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+	margin: 50 px auto;
+}
+.container-about h2{
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+.textUp{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+.textDown{
+	margin-bottom: 8vh;
+}
+.txt{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+/*Моды*/
+h2.mods-text{
+	margin-top: 40px;
+	margin-bottom: 80px;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+
+/*Рейтинг*/
+h1.players-text{
+	font-family: 'Russo One', sans-serif;;
+	margin-top: 75px;
+	margin-bottom: 50px;
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+h1.start{
+	text-align: center;
+	font-family: 'Russo One', sans-serif;;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+/*Галерея*/
+h2.gallery-text{
+	margin-top: 75px;
+	margin-bottom: 80px;
+	font-size: 40px;
+	letter-spacing: 3px;
+}
+#gallery{
+	padding-bottom: 5vh;
+}
+h2.inf{
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+h2.inf2{
+	font-weight: bold;
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+h3.inf{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.text{
+	font-size: 23px;
+}
+li.info-text{
+	text-align: left;
+	font-size: 21px;
+}
+h5.inf{
+	font-size: 23px;
+	text-align: center;
+}
+h4{
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+h4.txt{
+	font-weight: bold;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+table {
+	font-size: 23px;
+	margin: auto;
+	margin-bottom: 35px;
+}
+td, th {
+	/*border: 1px solid grey;*/
+	padding-left: 15px;
+    text-align: center;
+}
+.left-block{
+	float: left;
+	/*margin-top: 30px;*/
+	margin-left: 340px;
+}
+.right-block{
+	float: right;
+/*	margin-top: 30px;*/
+	margin-right: 360px;
+}
+
+/*Подвал*/
+footer a{
+	font-size: 2vh;
+	padding: 5px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin: 10px;
+}
+footer a:after{
+	background-color: #fff;
+	color: black;
+}
+.text-shadow{
+text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.header{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+	.header-background{
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 90%;
+		position: absolute;
+		background: linear-gradient(60deg, #27e7ff, #00ca52);
+		overflow: hidden;
+		transform: translateY(-80px);
+		z-index: -1;
+	}
+		.header-background:after{
+			content:  '';
+			background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+			width: 800%;
+			position: absolute;
+			top: -400%;
+			right: -400%;
+			height: 800%;
+			opacity: .3;
+			animation-name: rotate;
+			animation-duration: 140s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+@keyframes rotate{
+	0% {transform: rotateZ(0deg)}
+	100%{transform: rotateZ(360deg)}
+}
+
+.bn39 {
+  background-image: linear-gradient(135deg, #008aff, #86d472);
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline-block;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 250px;
+  z-index: 2;
+  /*margin-right: auto;
+  margin-left: auto;*/
+}
+
+.bn39:hover {
+  color: #fff;
+}
+
+.bn39 .bn39span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn39:hover .bn39span {
+  background: transparent;
+}
+
+.slider-wrap i {
+   position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 71%;
+    display: inline-block;
+    min-height: 60px;
+    margin-top: -40px;
+}
+.slider-wrap i::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.5s linear;
+  transform: rotate(180deg);
+}
+.slider-wrap i.close::after {
+  transform: rotate(0);
+}
